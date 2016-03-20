@@ -9,7 +9,7 @@
 Summary:	Python library to use the pseudo-tty of a docker container
 Name:		python-%{module}
 Version:	0.4.1
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Development/Libraries
 Source0:	https://github.com/d11wtq/%{module}/archive/98c85b13/%{module}-98c85b13.tar.gz
@@ -24,7 +24,7 @@ BuildRequires:	python-six
 %if %{with python3}
 BuildRequires:	python3-six
 %endif
-Requires:	python-docker-py
+Requires:	python-docker
 Requires:	python-six
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -36,7 +36,7 @@ allocated to a docker container, using the Python client
 %package -n python3-%{module}
 Summary:	Python library to use the pseudo-tty of a docker container
 Group:		Development/Languages
-Requires:	python3-docker-py
+Requires:	python3-docker
 Requires:	python3-six
 
 %description -n python3-%{module}
