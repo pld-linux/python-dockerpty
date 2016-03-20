@@ -25,7 +25,6 @@ BuildRequires:	python-six
 BuildRequires:	python3-six
 %endif
 Requires:	python-docker
-Requires:	python-six
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,7 +36,6 @@ allocated to a docker container, using the Python client
 Summary:	Python library to use the pseudo-tty of a docker container
 Group:		Development/Languages
 Requires:	python3-docker
-Requires:	python3-six
 
 %description -n python3-%{module}
 Provides the functionality needed to operate the pseudo-tty (PTY)
