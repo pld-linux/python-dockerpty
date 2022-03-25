@@ -9,7 +9,7 @@
 Summary:	Python library to use the pseudo-tty of a docker container
 Name:		python-%{module}
 Version:	0.4.1
-Release:	8
+Release:	9
 License:	Apache v2.0
 Group:		Development/Libraries
 Source0:	https://github.com/d11wtq/%{module}/archive/98c85b13/%{module}-98c85b13.tar.gz
